@@ -1,0 +1,23 @@
+@if (numero) {
+    <h1>Tabla multiplicar de {{numero}}</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Operacion</th>
+                <th>Resultado</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(fila of tabla; track fila) {
+                <tr>
+                    <td>{{fila.operacion}}</td>
+                    <td>{{fila.resultado}}</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+} @else {
+    <h2 style="color:red">
+        No hemos recibido parametro
+    </h2>
+}

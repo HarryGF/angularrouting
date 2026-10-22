@@ -1,0 +1,10 @@
+<h1>Menu tabla multiplicar</h1>
+<ul>
+    @for(num of numeros; track num) {
+        <li>
+            <a [routerLink]="['/tabla', num]">
+                Tabla multiplicar de {{num}}
+            </a>
+        </li>
+    }
+</ul>
